@@ -1,6 +1,5 @@
 import './App.css'
 import BenifiteCard from './components/Card/BenifiteCard'
-import Card from './components/Card/Card'
 import TestimonialsCard from './components/Card/TestimonialsCard'
 import Container from './components/Container/Container'
 import ContainerCard from './components/ContainerCard/ContainerCard'

@@ -1,24 +1,7 @@
-import { useEffect, useState } from 'react'
-import Container from '../Container/Container'
 import styles from './Hero.module.css'
 
 const Hero = () => {
-/* const[words , setWords] = useState<string[]>([])
-const [finished , setFinished] = useState(false) ;
-useEffect(()=> {
-    const allWords = text.split("");
-    let index = 0
 
-    const interval = window.setInterval(() => {
-        index++;
-    setWords(allWords.slice(0,index))
-    if(index >= allWords.length ) {
-      {   window.clearInterval(interval)
-        setFinished(true)}
-         
-    }
-
-})}) */
   return (
       <div className={styles.hero}>
       <div className={styles.imageHero}>

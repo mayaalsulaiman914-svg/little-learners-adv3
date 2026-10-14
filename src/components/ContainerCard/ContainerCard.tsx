@@ -1,4 +1,3 @@
-import type { CSSProperties } from "react"
 import type { ChildrenProps } from "../../types/common"
 import "./ContainerCard.css"
 
