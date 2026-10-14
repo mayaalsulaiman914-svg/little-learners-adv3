@@ -1,0 +1,112 @@
+.pageCard {
+    padding: 60px;
+    text-align: center;
+    position: relative;
+}
+
+h2.title {
+margin: 0 auto 12px;
+font-family: Raleway;
+font-weight: 700;
+font-size: 48px;
+leading-trim: NONE;
+line-height: 130%;
+letter-spacing: 0%;
+text-align: center;
+color: #1A1A1A;
+}
+
+.containerDash {
+margin:0 auto 30px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.containerDash .backgroundDash {
+width: 60px;
+height: 12px;
+background-color: #FFBE99;
+display: flex;
+align-items: center;
+}
+.containerDash .backgroundDash .dash {
+    width: 55px;
+    border: 2px solid #000000;
+
+}
+.containerDash .circle {
+    position: absolute;
+    width: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+.containerDash .left {
+    left: 0;
+    
+}
+.containerDash .right {
+    right: 0;
+}
+p.desc {
+margin-bottom: 20px;
+font-family: Outfit;
+font-weight: 500;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0%;
+
+}
+
+button.readBtn {
+padding: 10px 0;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 6px;
+width: 100%;
+background-color: #FFDECC;
+box-shadow: 4px 4px 0px 2px #1E1E1E;
+border: 2px solid #262626;
+font-family: Outfit;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+
+}
+
+@media screen And (max-width : 1440px) {
+  .pageCard  {
+    padding: 50px;
+  } 
+  h2.title  {
+    font-size: 34px;
+  } 
+ p.desc {
+    font-size: 16px;
+ }
+}
+@media screen And (max-width : 992px) {
+  .pageCard  {
+      max-width: 358px;
+    padding: 40px;
+  }
+  .containerDash {
+    max-width: 358px;
+  }  
+  h2.title  {
+    font-size: 28px;
+  } 
+  .containerDash .backgroundDash  {
+    width: 38px;
+  }
+ p.desc {
+    font-size: 16px;
+ }
+}
+
+ 

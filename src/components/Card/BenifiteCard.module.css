@@ -1,0 +1,61 @@
+.BenifiteCard {
+    max-width: 358px;
+    padding: 80px 24px 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+    .icon {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    background-color: #FFDECC;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 30px;
+    transform: translateY(-50%);
+    }
+    .icon img {
+        width: 34px;
+    }
+
+    h2.title {
+    width: fit-content;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    }
+
+    p.desc{
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    }
+ 
+@media screen And (max-width : 1440px) {
+  .BenifiteCard {
+    padding: 60px 24px 40px;
+    gap: 16px;
+  }  
+  .icon {
+    width: 56px;
+    height: 56px;
+    left: 24px;
+    border-radius: 8px;
+    }
+    h2.title{
+    font-size: 24px;
+    }
+    p.desc {
+    font-size: 16px;
+    }
+}

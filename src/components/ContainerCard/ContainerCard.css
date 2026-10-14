@@ -1,0 +1,16 @@
+.containerCards {
+    display: grid;
+    grid-template-columns: repeat(var(--columns),minmax(0,1fr));
+   
+}
+
+@media screen And (max-width : 1440px) {
+   .containerCards {
+      row-gap: 68px;
+   } 
+}
+@media screen And (max-width : 992px) {
+   .containerCards {
+       grid-template-columns: repeat(1,minmax(0,1fr));
+   } 
+}
