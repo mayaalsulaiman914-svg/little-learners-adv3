@@ -1,0 +1,155 @@
+.historyCard {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.containerDate {
+    position: relative;
+}
+.shape{
+    display: flex;
+ 
+}
+.circle, .line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #262626;
+    border-radius: 50%;
+    background-color: #FFFFFF; 
+    z-index: 2;
+}
+    .circle.one{
+    left:-10px;
+    }
+    .circle.two{
+    left:-60px;
+    }
+.line{
+    background-color: #FFBE99;
+    width: 55px;
+    height: 12px;
+    left: -55px; 
+    display: flex;
+    align-items: center;
+}
+.border {
+    width: 100%;
+    border: 2px solid #000000;
+}
+.longLine {
+    position: absolute;
+    width: 12px;
+    height: 100%;
+    background-color: #FFBE99;
+}
+.year {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.year img {
+    width: 87px;
+}
+.year p {
+font-family: Raleway;
+font-style: Bold;
+font-size: 68px;
+line-height: 130%;
+letter-spacing: 0%;
+color: #1A1A1A;
+}
+
+.info h2 {
+font-family: Raleway;
+font-weight: 700;
+font-size: 28px;
+line-height: 130%;
+letter-spacing: 0%;
+color: #1A1A1A;
+}
+.info p {
+font-family: Outfit;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #333333;
+}
+
+@media screen  And (max-width: 1440px) {
+   .historyCard{
+        gap: 40px;
+   } 
+   .year {
+    padding: 25px;
+        }
+    .year img {
+    width: 60px;
+    }
+    .year p { 
+        font-size: 48px;
+    }
+    .info h2 { 
+        font-size: 24px;
+    }
+    .info p { 
+        font-size: 16px;
+    }
+}
+
+@media screen And (max-width : 992px) {
+     .historyCard{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+   } 
+   .containerDate {
+    width: 100%;
+   }
+    .shape{ 
+        width: 100%;
+    }
+    .line{ 
+        width: 50%;
+        left: 0;
+    }
+     .circle.one{
+     left:50%;
+    }
+     .circle.two{
+    left:-10px;
+    }
+   .year {
+    max-width: 182px;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: 3;
+    position: relative;
+        }
+    .year img {
+    width: 50px;
+    }
+    .year p { 
+        font-size: 38px;
+    }
+    .info {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .info h2 { 
+        font-size: 22px;
+    }
+    
+}
+
+ 
+ 

@@ -1,0 +1,112 @@
+.cardForm {
+    position: relative;
+}
+.form {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+ 
+.containerInputs {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 40px;
+}
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.group label ,.message label {
+font-family: Outfit;
+font-weight: 600;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 150%;
+letter-spacing: 0%;
+color :#4C4C4C;
+}
+.group input , select {
+    padding: 24px;
+    border: 2px solid #262626;
+    border-radius: 12px;
+}
+.message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.message textarea {
+    padding: 24px;
+    border-radius: 6px;
+    border: 2px solid #262626;
+}
+
+.btn {
+    padding: 24px;
+    background-color: #FFAE80;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #262626;
+    &:hover {
+        background-color: #fc9f6a;
+    }
+}
+.social {
+    position: absolute;
+    top: -20px;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+.backgroundIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #FFDECC;
+    border-radius: 6px;
+    border: 2px solid #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen And (max-width : 1440px) {
+    .form {
+    padding: 100px 80px;
+    gap: 30px;
+}
+
+.group {
+    gap: 10px;
+}
+.group input , select { 
+    padding: 24px;
+}
+.btn { 
+    padding: 20px;
+}
+}
+@media screen And (max-width : 992px) {
+    .form {
+    padding: 80px 30px;
+    gap: 30px;
+}
+.containerInputs {
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 30px;
+}
+.group {
+    gap: 10px;
+}
+.group input , select { 
+    padding: 20px;
+}
+.btn { 
+    padding: 16px;
+}
+}

@@ -1,5 +1,6 @@
  import { useState } from "react"
 import styles from  "./Navbar.module.css"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const [isOpen , setIsOpen ] = useState(false)  
@@ -36,13 +37,13 @@ const Navbar = () => {
       <button className={styles.menuButton} onClick={()=> setIsOpen(!isOpen)}><img src="/assets/img/menuIcon.png" /> </button>
        { <div className={ `${styles.navLink} ${isOpen ? styles.active : ""}`}>
        <ul>
-        <li> <a href="#home">Home</a></li>
-        <li> <a href="#about">About Us</a></li>
-        <li> <a href="#academics">Academics</a></li>
-        <li> <a href="#admissions">Admissions</a></li>
-        <li> <a href="#student-life">Student Life</a></li>
+        <Link to="/">Home</Link>
+        <Link to="/about">About Us</Link>
+         <Link to="/academics">Academics</Link>
+         <Link to="/admissions">Admissions</Link>
+        <Link to="/StudentLife">Student Life</Link>
       </ul>
-      <button>Contact</button>
+      <Link className={styles.btn} to="/contact"><button>Contact</button></Link>
       </div>}
     
     </div>

@@ -1,0 +1,85 @@
+.whyCard {
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    max-width: 620px;
+    margin: 0 auto;
+    }
+
+.containerImage {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.containerImage .rec {
+    position: absolute;
+    top: -45%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 300px;
+
+}
+.containerImage .whypic {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+    position: relative;
+    z-index: 2;
+}
+.info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+   text-align: center;
+}
+.info h2 {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+}
+.info p {
+   font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #4C4C4D;
+}
+
+@media screen And (max-width : 1440px) {
+   .whyCard {
+        padding: 40px;
+        } 
+    .info {
+    gap: 14px;
+    }
+    .info h2 {
+    font-size: 24px;
+
+    }
+    .info p {
+    font-size: 16x;
+
+    }
+}
+@media screen And (max-width : 992px) {
+   .whyCard {
+        padding: 30px;
+        }
+        .containerImage .whypic {
+            max-height: 190px;
+        }
+    .info {
+    gap: 10px;
+    }
+    .info h2 {
+    font-size: 22px;
+
+    }
+     
+}

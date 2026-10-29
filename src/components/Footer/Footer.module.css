@@ -71,6 +71,10 @@ margin-bottom: 0;
     gap: 10px;
 
 } 
+.footerLogo .links a {
+    text-decoration: none;
+    color: #333333;
+} 
 .footerLogo .links .one {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -96,7 +100,6 @@ font-style: Medium;
 font-size: 20px;
 line-height: 150%;
 letter-spacing: 0%;
-color: #333333;
 margin-bottom: 14px;
 } 
 

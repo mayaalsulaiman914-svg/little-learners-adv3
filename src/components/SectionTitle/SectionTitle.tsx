@@ -1,6 +1,6 @@
 import styles from "./SectionTitle.module.css"
 
-type SectionTitleProps = {
+interface SectionTitleProps  {
     title : string ;
     description : string ;
     subtitle : string

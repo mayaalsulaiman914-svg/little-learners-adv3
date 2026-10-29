@@ -1,0 +1,86 @@
+.eventCard {
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 540px;
+} 
+.ContainerImage {
+    width: 100%;
+
+}
+
+.rec {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 25%;
+}
+.eventPic {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    object-fit: cover;
+    max-width: 250px;
+    margin:  0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info h2 {
+font-family: Raleway;
+font-weight: 700;
+font-size: 28px;
+line-height: 130%;
+letter-spacing: 0%;
+text-align: center;
+color: #1A1A1A;
+}
+.info p {
+font-family: Outfit;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+color: #4C4C4D;
+}
+
+@media screen And (max-width : 1440px) {
+    .eventCard {
+        padding: 40px;
+    }
+    .info { 
+        margin-top: 40px;
+        gap: 16px;
+    }
+    .info h2 { 
+        font-size: 24px;
+    }
+    .info p {
+        font-size: 16px;
+    }
+}
+@media screen And (max-width : 992px) {
+    .eventCard {
+     
+        padding: 30px;
+    }
+    .info { 
+        margin-top: 30px;
+        gap: 12px;
+    }
+    .info h2 { 
+        font-size: 22px;
+    }
+ 
+}

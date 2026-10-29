@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styles from "./Footer.module.css"
 
 const Footer = () => {
@@ -28,34 +29,34 @@ const Footer = () => {
                 <div className={styles.group}>
                     <h3>Home</h3>
                     <ul>
-                        <li>Features</li>
-                        <li>Our Testimonials</li>
-                        <li>FAQ</li>
+                        <li><Link to="/#features">Features</Link></li>
+                        <li><Link to="/#testimonials">Our Testimonials</Link></li>
+                        <li><Link to="/#faq">FAQ</Link></li>
                     </ul>
                 </div>
                 <div className={styles.group}>
                     <h3>About Us</h3>
                     <ul>
-                        <li>Our Mission</li>
-                        <li>Our Vission</li>
-                        <li>Awards and Recognitions</li>
-                        <li>Teachers</li>
+                     <li><Link to="/about#missionVission">Our Mission</Link></li>
+                     <li><Link to="/about#missionVission">Our Vission</Link></li>
+                     <li><Link to="/about#awards">Awards and Recognitions</Link></li>
+                     <li><Link to="/about#teachers">Teachers</Link></li>
                     </ul>
                 </div>
             </div>
             <div className={styles.one}>
                 <div className={styles.group}>
                     <h3>Academics</h3>
-                    <ul>
-                        <li>Special Features</li>
-                        <li>Gallery</li>
+                    <ul> 
+                          <li><Link to="/academics#specialFeatures">Special Features</Link></li>
+                          <li><Link to="/academics#gallery">Gallery</Link></li>
                     </ul>
                 </div>
                 <div className={styles.group}>
                     <h3>Contact Us</h3>
-                    <ul>
-                        <li>Information</li>
-                        <li>Map & Direction</li>
+                    <ul> 
+                         <li><Link to="/Contact#information">Information</Link></li>
+                         <li><Link to="/Contact#map">Map & Direction</Link></li>
                     </ul>
                 </div>
             </div>

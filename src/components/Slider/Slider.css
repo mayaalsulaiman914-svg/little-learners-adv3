@@ -22,7 +22,7 @@
           gap: 50px;
           box-sizing: border-box; 
           padding: 8px;
-          align-items: start;
+          align-items: stretch;
          .container-card {
             display: flex;
             justify-content: center;
@@ -37,7 +37,7 @@
     .desktop-slider {
          .slide {
           grid-template-columns: repeat(3, minmax(0,1fr));
-          align-items: start;
+          align-items: stretch;
         }
     }
  
@@ -46,7 +46,7 @@
           
     }
 
-      .icons {
+      .btns {
         position: absolute;
         width: 100%;
         display: flex;

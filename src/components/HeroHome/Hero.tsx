@@ -1,6 +1,6 @@
-import styles from './Hero.module.css'
+import styles from './HeroHome.module.css'
 
-const Hero = () => {
+const HeroHome = () => {
 
   return (
       <div className={styles.hero}>
@@ -41,4 +41,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroHome

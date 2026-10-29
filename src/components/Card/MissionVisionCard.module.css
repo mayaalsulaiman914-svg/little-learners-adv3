@@ -1,0 +1,62 @@
+.misVisCard {
+  padding: 60px; 
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  max-width: 620px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title h2 {
+font-family: Raleway;
+font-weight: 700;
+font-size: 48px;
+line-height: 130%;
+letter-spacing: 0%;
+color: #1A1A1A;
+}
+.title img {
+    width: 80px;
+}
+
+.desc {
+font-family: Outfit;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #333333;
+}
+
+@media screen And (max-width : 1440px) {
+ .misVisCard {
+    padding: 50px;
+ }
+ .title h2 { 
+    font-size: 38px;
+ }
+ .title img { 
+    width: 60px;
+ }
+ .desc {
+    font-size: 16px;
+ }
+}
+
+@media screen And (max-width : 992px) {
+    .misVisCard {
+        padding: 40px;
+    }
+    .title h2 { 
+        font-size: 30px;
+    }
+    .title img {
+    width: 50px;
+}
+ 
+}

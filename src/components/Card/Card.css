@@ -5,4 +5,56 @@
     border-radius: 12px;
      
 }
+.card.containerHistory {
+     position: relative;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.longLine {
+        position: absolute;
+        width: 12px;
+        height:63%;
+        background-color: #FFBE99;
+        left: 8%;
+        top: 19%;
+        display: flex;
+        justify-content: center;
+          .border {
+           height: 100%;
+           border: 2px solid #000000;
+        
+          
+        }
+}
  
+ 
+@media screen And (max-width : 1440px) {
+.card {
+    box-shadow: 4px 4px 0px 2px #1E1E1E;
+    border-radius: 10px;
+    }
+.card.containerHistory { 
+    padding: 100px;
+}
+.longLine {
+    top: 16%; 
+    height: 68%;
+    left: 40px;
+}
+}
+
+@media screen And (max-width: 992px) {
+    .card.containerHistory {
+        padding: 50px 20px;
+        max-width: 620px;
+        align-self: center;
+    }
+    .longLine {
+    top: 6%; 
+    height: 77%;
+    left: 5px;
+    }
+}

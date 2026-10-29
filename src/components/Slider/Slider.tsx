@@ -10,11 +10,12 @@ id: string | number;
 type SliderProps<T extends SliderItem> = {
   items: T[];
   renderItem: (item: T) => ReactNode;
+  text?: string
   };
 
  
 
-const Slider = <T extends SliderItem>({items, renderItem}: SliderProps<T>) => {
+const Slider = <T extends SliderItem>({items, renderItem , text}: SliderProps<T>) => {
 const [currentSlide, setCurrentSlide] = useState(0);
 const desktopSlides: T[][] = [];
 
@@ -79,13 +80,18 @@ return (
   </div>
 
   <div className="icons">
-    <button className="prev" onClick={prevSlide} aria-label="Previous slide">
+    {text && <p>{text}</p>}
+     <div className="btns">
+      <button className="prev" onClick={prevSlide} aria-label="Previous slide">
       <img  src="/assets/img/left.png" alt="" />
     </button>
-
-    <button className="next" onClick={nextSlide} aria-label="Next slide">
+      <button className="next" onClick={nextSlide} aria-label="Next slide">
       <img src="/assets/img/right.png" alt="" />
     </button>
+       
+
+     
+     </div>
   </div>
 </div>
 

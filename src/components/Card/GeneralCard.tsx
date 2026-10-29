@@ -1,13 +1,13 @@
-import styles from "./BenifiteCard.module.css"
+import styles from "./GeneralCard.module.css"
 import Card from "./Card"
 
-type BenifiteCardProps = {
+type GeneralCardProps = {
     image : string;
     title : string;
     description : string
 }
 
-const BenifiteCard = ({image , title , description} :BenifiteCardProps) => {
+const GeneralCard = ({image , title , description} :GeneralCardProps) => {
   return (
     <Card className={styles.BenifiteCard}>
       <div className={styles.icon}><img src={image} alt="" /></div>
@@ -18,4 +18,4 @@ const BenifiteCard = ({image , title , description} :BenifiteCardProps) => {
   )
 }
 
-export default BenifiteCard
+export default GeneralCard

@@ -1,8 +1,6 @@
   .BenifiteSection {
     .container {
     .containerCards {
-    row-gap: 85px;
-    column-gap: 40px;
     justify-items: center;  
     }
     }
@@ -13,8 +11,6 @@
      .containerCards {
     align-items: flex-start;
     margin: 0 auto;
-    row-gap: 30px;
-    column-gap: 50px; 
     }
 }}
 
@@ -23,9 +19,183 @@
      .containerCards {
     align-items: flex-start;
     margin: 0 auto;
-    gap: 40px;
-     align-items: stretch;
+    align-items: stretch;
   
     }
 }   
 }
+
+.Mission-Visions {
+    .container {
+        .containerCards {
+           justify-items: center;
+        }
+    }
+}
+
+.award-section {
+    .container {
+        gap: 0;
+        .slider {
+    .desktop-slider , .mobile-slider {
+        .slider-window { 
+        .slider-track {
+        .slide { 
+            padding-top: 36px;
+        }}}}
+     .icons {
+      position: static;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      p{
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 130%;
+        letter-spacing: 0%;
+
+      }
+      .btns {
+        transform: translateY(0);
+        position:static;
+        width: fit-content;
+        gap: 20px;
+        button {
+            position: static;
+             .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+        }
+        
+      }
+    }
+   } 
+    }
+    
+}
+
+.admissions {
+    .container {
+      
+        .containerCards{
+            overflow: hidden;
+            padding-top: 100px;
+            padding-bottom: 5px;
+        }
+     } 
+}
+
+.tabels {
+     .container {
+        .containerCards {
+            .card {
+                table {
+                    border-collapse: collapse;
+                    padding: 60px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    thead {
+                       border: 2px solid #262626;
+                       border-radius: 12px;
+                         background-color: #FFEFE5;
+                     tr { 
+                       width: 100%;
+                         th {
+                            width: 25%;
+                            position: relative;
+                             padding: 25px;
+                            text-align: start;
+                            border-right: 2px solid var(--primary-color);
+                            &:last-child {
+                            border-right: none;
+                            }
+                        }
+                    }
+                    }
+                    tbody {
+                           border: 2px solid #262626;
+                           border-radius: 12px;
+                        tr {
+                        width: 100%;
+                        border-bottom: 2px solid #262626;
+                        
+                            td {
+                                width: 25%;
+                                padding: 30px;
+                                border-left: 2px solid #262626;
+                            }
+                        }
+                    }
+                    &.two {
+                        tbody{
+                             display: flex;
+                           flex-direction: column;
+                           justify-content: space-between;
+                        }
+                    }
+                  
+                }
+            }
+        }
+     }
+}
+
+ 
+ 
+
+@media screen And (max-width : 992px) {
+    .award-section {
+    .container {
+   
+        .slider {
+   
+     .icons {
+      max-width: 620px;
+      margin: 40px auto 0;
+      p{
+        font-size: 18px;
+     
+      }
+      .btns {
+        gap: 16px;
+      }
+    }
+   } 
+    }
+    
+}
+.tabels {
+     .container {
+        .containerCards {
+            .card {
+                    max-width:700px;
+                    margin: 0 auto;
+                table { 
+                    overflow-x: scroll;
+                    padding: 30px;
+                    
+                    thead {
+                        overflow-x: scroll;
+                        tr {
+                             th {
+                            padding: 18px;
+                        }
+                        }
+                    }
+                    tbody {
+                        overflow-x: scroll;
+                        tr {
+                             td{
+                            padding: 18px;
+                        }
+                        }
+                    }
+                }}}}
+            }}
