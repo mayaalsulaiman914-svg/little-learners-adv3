@@ -1,14 +1,13 @@
  import "./Section.css"
-
 import type { ChildrenProps } from "../../types/common"
-import type React from "react"
+
  type sectionProps =  ChildrenProps & {
   className? : string ,
   id?:string,
  }
-const Section = ({children , className} : sectionProps) => {
+const Section = ({children , className,id} : sectionProps) => {
   return (
-    <section className={className} >
+    <section id={id} className={className} >
       {children}
     </section>
   )
